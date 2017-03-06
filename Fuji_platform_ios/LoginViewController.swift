@@ -18,13 +18,20 @@ class LoginViewController: BasicViewController {
     
     @IBAction func login(_ sender: Any) {
         Logger.log(string: "Clicked login")
+        
+        if !Utils.isOnline(){
+            Alert.show(viewController: self, message: Constant.YOU_ARE_OFFLINE)
+            return
+        }
+        
         login()
     }
     
     @IBAction func signup(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        self.present(vc, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: Constant.STORY_BOARD_MAIN_NAME, bundle: nil)
+        let signupViewController = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_SIGNUP_ID) as! SignupViewController
+        
+        self.navigationController?.pushViewController(signupViewController, animated: true)
 
     }
     
@@ -39,19 +46,14 @@ class LoginViewController: BasicViewController {
         let username = textfieldUsername.text?.trimmingCharacters(in: CharacterSet.whitespaces)
         let password = textfieldPassword.text?.trimmingCharacters(in: CharacterSet.whitespaces)
         
-        if (username?.isEmpty)! || (password?.isEmpty)!{
-            let alert = UIAlertController(title: Constant.NOTICE,
-                                          message: Constant.LOGIN_ERROR_MESSAGE,
-                                          preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: Constant.OK,
-                                          style: UIAlertActionStyle.default,
-                                          handler: nil))
-            self.present(alert, animated: true, completion: nil)
+        let (isValid, user) = validate()
+        
+        if !isValid {
+            Alert.show(viewController: self, message: Constant.LOGIN_ERROR_MESSAGE)
         } else {
             Indicator.start(context: self.view)
 
-            let username = textfieldUsername.text!
-            let password = Utils.sha256(string: textfieldPassword.text!)
+            user?.setPassword(password: (user?.getPassword().sha256())!)
             
             func callback(isSuccess: Bool, message: String) {
                 Indicator.stop()
@@ -66,13 +68,24 @@ class LoginViewController: BasicViewController {
                 }
             }
             
-            User.login(user: User(username: username, password: password), callback: callback)
+            User.login(user: user!, callback: callback)
+        }
+    }
+    
+    private func validate() -> (Bool, User?) {
+        let username = textfieldUsername.text?.trimmingCharacters(in: CharacterSet.whitespaces)
+        let password = textfieldPassword.text?.trimmingCharacters(in: CharacterSet.whitespaces)
+        
+        if (username?.isEmpty)! || (password?.isEmpty)!{
+          return (false, nil)
+        } else {
+            return (true, User.init(username: username!, password: password!))
         }
     }
     
     private func goToHomeViewController(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let storyboard = UIStoryboard(name: Constant.STORY_BOARD_MAIN_NAME, bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_HOME_ID) as! HomeViewController
         let navController = UINavigationController(rootViewController: homeViewController)
         self.present(navController, animated: true, completion: nil)
     }

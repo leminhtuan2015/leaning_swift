@@ -24,6 +24,7 @@
 		A75027BE1E6D3561005D686E /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BD1E6D3561005D686E /* Indicator.swift */; };
 		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
 		A75027C41E6D5DF8005D686E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C31E6D5DF8005D686E /* Alert.swift */; };
+		A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C51E6D712E005D686E /* SignupViewController.swift */; };
 		CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		A75027BD1E6D3561005D686E /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		A75027C31E6D5DF8005D686E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A75027C51E6D712E005D686E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +181,7 @@
 				A75027791E6CF29E005D686E /* HomeViewController.swift */,
 				A75027A81E6CF2E9005D686E /* BasicViewController.swift */,
 				A75027AA1E6CF459005D686E /* LoginViewController.swift */,
+				A75027C51E6D712E005D686E /* SignupViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				A75027A91E6CF2E9005D686E /* BasicViewController.swift in Sources */,
 				A75027781E6CF29E005D686E /* AppDelegate.swift in Sources */,
 				A75027B01E6CF700005D686E /* Constant.swift in Sources */,
+				A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */,
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
 				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,

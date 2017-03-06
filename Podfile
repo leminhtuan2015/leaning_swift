@@ -7,4 +7,5 @@ target 'Fuji_platform_ios' do
   pod 'NVActivityIndicatorView'
   pod 'Toast-Swift', '~> 2.0.0'
   pod 'CryptoSwift'
+  pod 'STRegex', '~> 0.4.0'
 end
