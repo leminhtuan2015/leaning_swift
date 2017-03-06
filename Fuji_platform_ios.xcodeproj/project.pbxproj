@@ -23,6 +23,7 @@
 		A75027BC1E6D1B35005D686E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BB1E6D1B35005D686E /* Utils.swift */; };
 		A75027BE1E6D3561005D686E /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BD1E6D3561005D686E /* Indicator.swift */; };
 		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
+		A75027C41E6D5DF8005D686E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C31E6D5DF8005D686E /* Alert.swift */; };
 		CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		A75027BB1E6D1B35005D686E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A75027BD1E6D3561005D686E /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		A75027C31E6D5DF8005D686E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 			children = (
 				A75027BD1E6D3561005D686E /* Indicator.swift */,
 				A75027BF1E6D3CA8005D686E /* Toast.swift */,
+				A75027C31E6D5DF8005D686E /* Alert.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				A75027B01E6CF700005D686E /* Constant.swift in Sources */,
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
+				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
 			);
