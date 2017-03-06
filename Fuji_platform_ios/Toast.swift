@@ -22,7 +22,7 @@ class Toast {
         var durationAuto = duration
         
         if duration < 0 {
-            durationAuto = Float(text.components(separatedBy: " ").count) / 2
+            durationAuto = Float(text.components(separatedBy: " ").count) / 3
         }
         
         context.makeToast(text, duration: TimeInterval(durationAuto), position: .center, style: style)

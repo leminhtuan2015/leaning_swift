@@ -21,5 +21,9 @@ class Constant {
     public static let LOGIN_ERROR_MESSAGE: String = "Vui lòng điền đầy đủ thông tin đăng nhập"
     public static let LOGIN_SUCCESS: String = "Đăng nhập thành công"
     public static let LOGIN_FAIL: String = "Đăng nhập thất bại, vui lòng thử lại"
+    public static let LOGOUT_SUCCESS: String = "Đăng xuất thành công"
+    public static let LOGOUT_FAIL: String = "Đăng xuất thất bại, vui lòng thử lại"
+    public static let LOGOUT_CONFIRM: String = "Bạn muốn đăng xuất hệ thống?"
+    public static let CONFIRM: String = "Xác nhận"
     
 }

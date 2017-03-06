@@ -59,10 +59,7 @@ class LoginViewController: BasicViewController {
                 if isSuccess {
                     Toast.show(context: self.view, text: Constant.LOGIN_SUCCESS)
                     
-//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                    let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-//                    vc.x = 1;
-//                    self.present(vc, animated: true, completion: nil)
+                    goToHomeViewController()
                     
                 } else {
                     Toast.show(context: self.view, text: Constant.LOGIN_FAIL)
@@ -71,6 +68,13 @@ class LoginViewController: BasicViewController {
             
             User.login(user: User(username: username, password: password), callback: callback)
         }
+    }
+    
+    private func goToHomeViewController(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let navController = UINavigationController(rootViewController: homeViewController)
+        self.present(navController, animated: true, completion: nil)
     }
     
 }
