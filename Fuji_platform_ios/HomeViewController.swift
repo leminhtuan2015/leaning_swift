@@ -8,11 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: BasicViewController {
+    
+    public var x = 0
+    
+    @IBOutlet weak var buttonLogin: UIButton!
 
+    @IBAction func buttonLogin(_ sender: Any) {
+        Logger.log(string: "Login")
+        
+        self.performSegue(withIdentifier: Constant.SEGUE_LOGIN, sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        Logger.log(string: "xxxxxx: \(x)")
     }
 
     override func didReceiveMemoryWarning() {

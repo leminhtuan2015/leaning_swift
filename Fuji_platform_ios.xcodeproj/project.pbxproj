@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A75027781E6CF29E005D686E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027771E6CF29E005D686E /* AppDelegate.swift */; };
-		A750277A1E6CF29E005D686E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027791E6CF29E005D686E /* ViewController.swift */; };
+		A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027791E6CF29E005D686E /* HomeViewController.swift */; };
 		A750277D1E6CF29E005D686E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A750277B1E6CF29E005D686E /* Main.storyboard */; };
 		A750277F1E6CF29E005D686E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A750277E1E6CF29E005D686E /* Assets.xcassets */; };
 		A75027821E6CF29E005D686E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75027801E6CF29E005D686E /* LaunchScreen.storyboard */; };
 		A750278D1E6CF29E005D686E /* Fuji_platform_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750278C1E6CF29E005D686E /* Fuji_platform_iosTests.swift */; };
 		A75027981E6CF29E005D686E /* Fuji_platform_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027971E6CF29E005D686E /* Fuji_platform_iosUITests.swift */; };
+		A75027A91E6CF2E9005D686E /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027A81E6CF2E9005D686E /* BasicViewController.swift */; };
+		A75027AB1E6CF459005D686E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027AA1E6CF459005D686E /* LoginViewController.swift */; };
+		A75027AE1E6CF525005D686E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027AD1E6CF525005D686E /* Logger.swift */; };
+		A75027B01E6CF700005D686E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027AF1E6CF700005D686E /* Constant.swift */; };
+		A75027B61E6D02E1005D686E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027B51E6D02E1005D686E /* User.swift */; };
+		A75027BA1E6D0EA0005D686E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A75027B91E6D0EA0005D686E /* logo.png */; };
+		A75027BC1E6D1B35005D686E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BB1E6D1B35005D686E /* Utils.swift */; };
+		A75027BE1E6D3561005D686E /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BD1E6D3561005D686E /* Indicator.swift */; };
+		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
+		CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuji_platform_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8312A14F4B62421AE4EC4EF4 /* Pods-Fuji_platform_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		A75027741E6CF29E005D686E /* Fuji_platform_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuji_platform_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75027771E6CF29E005D686E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A75027791E6CF29E005D686E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A75027791E6CF29E005D686E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A750277C1E6CF29E005D686E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A750277E1E6CF29E005D686E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75027811E6CF29E005D686E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,16 @@
 		A75027931E6CF29E005D686E /* Fuji_platform_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fuji_platform_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75027971E6CF29E005D686E /* Fuji_platform_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuji_platform_iosUITests.swift; sourceTree = "<group>"; };
 		A75027991E6CF29E005D686E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75027A81E6CF2E9005D686E /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		A75027AA1E6CF459005D686E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A75027AD1E6CF525005D686E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A75027AF1E6CF700005D686E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A75027B51E6D02E1005D686E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A75027B91E6D0EA0005D686E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
+		A75027BB1E6D1B35005D686E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A75027BD1E6D3561005D686E /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AB534C663231777BAABCF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BD81F61157544720DBD2C62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8312A14F4B62421AE4EC4EF4 /* Pods-Fuji_platform_ios.debug.xcconfig */,
+				FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A750276B1E6CF29E005D686E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				A750278B1E6CF29E005D686E /* Fuji_platform_iosTests */,
 				A75027961E6CF29E005D686E /* Fuji_platform_iosUITests */,
 				A75027751E6CF29E005D686E /* Products */,
+				7BD81F61157544720DBD2C62 /* Pods */,
+				08AB534C663231777BAABCF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +139,12 @@
 		A75027761E6CF29E005D686E /* Fuji_platform_ios */ = {
 			isa = PBXGroup;
 			children = (
+				A75027B11E6CFF89005D686E /* resources */,
+				A75027AC1E6CF50B005D686E /* utils */,
+				A75027A71E6CF2CA005D686E /* views */,
+				A75027A61E6CF2C1005D686E /* models */,
+				A75027A51E6CF2B6005D686E /* controllers */,
 				A75027771E6CF29E005D686E /* AppDelegate.swift */,
-				A75027791E6CF29E005D686E /* ViewController.swift */,
 				A750277B1E6CF29E005D686E /* Main.storyboard */,
 				A750277E1E6CF29E005D686E /* Assets.xcassets */,
 				A75027801E6CF29E005D686E /* LaunchScreen.storyboard */,
@@ -125,6 +171,59 @@
 			path = Fuji_platform_iosUITests;
 			sourceTree = "<group>";
 		};
+		A75027A51E6CF2B6005D686E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A75027791E6CF29E005D686E /* HomeViewController.swift */,
+				A75027A81E6CF2E9005D686E /* BasicViewController.swift */,
+				A75027AA1E6CF459005D686E /* LoginViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		A75027A61E6CF2C1005D686E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A75027B51E6D02E1005D686E /* User.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		A75027A71E6CF2CA005D686E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A75027BD1E6D3561005D686E /* Indicator.swift */,
+				A75027BF1E6D3CA8005D686E /* Toast.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		A75027AC1E6CF50B005D686E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A75027AD1E6CF525005D686E /* Logger.swift */,
+				A75027AF1E6CF700005D686E /* Constant.swift */,
+				A75027BB1E6D1B35005D686E /* Utils.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A75027B11E6CFF89005D686E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A75027B21E6CFF94005D686E /* images */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		A75027B21E6CFF94005D686E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A75027B91E6D0EA0005D686E /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A750279C1E6CF29E005D686E /* Build configuration list for PBXNativeTarget "Fuji_platform_ios" */;
 			buildPhases = (
+				BA93E33DF5D7BD5B214DF330 /* [CP] Check Pods Manifest.lock */,
 				A75027701E6CF29E005D686E /* Sources */,
 				A75027711E6CF29E005D686E /* Frameworks */,
 				A75027721E6CF29E005D686E /* Resources */,
+				84D6074F4A4B5B5A37FD986A /* [CP] Embed Pods Frameworks */,
+				77F9D79EE7DA38A3316AA63B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75027BA1E6D0EA0005D686E /* logo.png in Resources */,
 				A75027821E6CF29E005D686E /* LaunchScreen.storyboard in Resources */,
 				A750277F1E6CF29E005D686E /* Assets.xcassets in Resources */,
 				A750277D1E6CF29E005D686E /* Main.storyboard in Resources */,
@@ -254,13 +357,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77F9D79EE7DA38A3316AA63B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D6074F4A4B5B5A37FD986A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA93E33DF5D7BD5B214DF330 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A75027701E6CF29E005D686E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A750277A1E6CF29E005D686E /* ViewController.swift in Sources */,
+				A75027AE1E6CF525005D686E /* Logger.swift in Sources */,
+				A75027AB1E6CF459005D686E /* LoginViewController.swift in Sources */,
+				A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */,
+				A75027A91E6CF2E9005D686E /* BasicViewController.swift in Sources */,
 				A75027781E6CF29E005D686E /* AppDelegate.swift in Sources */,
+				A75027B01E6CF700005D686E /* Constant.swift in Sources */,
+				A75027B61E6D02E1005D686E /* User.swift in Sources */,
+				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
+				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
+				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +569,7 @@
 		};
 		A750279D1E6CF29E005D686E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8312A14F4B62421AE4EC4EF4 /* Pods-Fuji_platform_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuji_platform_ios/Info.plist;
@@ -422,6 +582,7 @@
 		};
 		A750279E1E6CF29E005D686E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuji_platform_ios/Info.plist;
@@ -505,6 +666,7 @@
 				A750279E1E6CF29E005D686E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A750279F1E6CF29E005D686E /* Build configuration list for PBXNativeTarget "Fuji_platform_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +675,7 @@
 				A75027A11E6CF29E005D686E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A75027A21E6CF29E005D686E /* Build configuration list for PBXNativeTarget "Fuji_platform_iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +684,7 @@
 				A75027A41E6CF29E005D686E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
