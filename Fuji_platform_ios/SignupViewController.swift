@@ -79,19 +79,13 @@ class SignupViewController: BasicViewController {
             return (false, Constant.PASSWORD_NOT_MATCHES, nil)
             
         } else if !regexEmail.matches(email) {
-//            return (false, Constant.IN_VALIDATE_EMAIL)
+            return (false, Constant.IN_VALIDATE_EMAIL, nil)
         }
         
         return (true, "OK", User.init(username: username, password: password.sha256(), email: email))
     }
     
     private func gotoLoginViewController(){
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let controller = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_LOGIN_ID) as! LoginViewController
-////        let navController = UINavigationController(rootViewController: controller)
-////        self.present(navController, animated: true, completion: nil)
-//        self.navigationController?.pushViewController(controller, animated: true)
-        
         navigationController?.popViewController(animated: true)
     }
 }
