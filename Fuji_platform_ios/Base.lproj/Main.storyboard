@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="493" y="-338"/>
         </scene>
-        <!--Login-->
+        <!--LoginViewController-->
         <scene sceneID="P7m-aJ-U5m">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="dCK-tT-pc7" customClass="LoginViewController" customModule="Fuji_platform_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="dCK-tT-pc7" customClass="LoginViewController" customModule="Fuji_platform_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="knD-zu-Elm"/>
                         <viewControllerLayoutGuide type="bottom" id="gwz-Rn-b0H"/>
@@ -121,11 +121,81 @@
                         <outlet property="imageViewLogo" destination="r61-QV-NlK" id="sLk-CJ-lUY"/>
                         <outlet property="textfieldPassword" destination="Jhb-pI-xW8" id="20p-x3-Q81"/>
                         <outlet property="textfieldUsername" destination="JOs-fq-pD7" id="pRs-fo-3Z1"/>
+                        <segue destination="Wsg-xS-efC" kind="show" identifier="signup" id="YRj-4a-T0m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poS-3H-NT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1419" y="-338"/>
+        </scene>
+        <!--SignupViewControler-->
+        <scene sceneID="3sL-BV-g2H">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" title="SignupViewControler" id="Wsg-xS-efC" customClass="SignupViewController" customModule="Fuji_platform_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QWe-qS-mKa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PAx-cE-dcG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ra1-sQ-5Aa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HmR-x6-t2p">
+                                <rect key="frame" x="28" y="89" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vB-nU-zwo">
+                                <rect key="frame" x="28" y="139" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password confirm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5k-59-Lvb">
+                                <rect key="frame" x="28" y="189" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EE-YA-XXn">
+                                <rect key="frame" x="123" y="329" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Đăng ký"/>
+                                <connections>
+                                    <action selector="buttonSignup:" destination="Wsg-xS-efC" eventType="touchUpInside" id="wKs-PP-3wY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hỗ trợ 094 373 1327" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NEL-5T-Eua">
+                                <rect key="frame" x="88" y="468" width="145" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9K-G7-n9K">
+                                <rect key="frame" x="28" y="241" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textfieldEmail" destination="o9K-G7-n9K" id="9FB-Fx-ObG"/>
+                        <outlet property="textfieldPassword" destination="5vB-nU-zwo" id="2eT-gp-z86"/>
+                        <outlet property="textfieldPasswordConfirm" destination="v5k-59-Lvb" id="0hf-K2-IjO"/>
+                        <outlet property="textfieldUsername" destination="HmR-x6-t2p" id="9aT-qq-zg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlE-z4-nqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268.75" y="-338.02816901408448"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RFM-1L-0S7">

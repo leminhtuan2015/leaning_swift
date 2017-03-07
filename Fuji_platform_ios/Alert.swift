@@ -23,4 +23,10 @@ class Alert {
         
         viewController.present(alertController, animated: true, completion: nil)
     }
+    
+    class func show(viewController: UIViewController, message: String){
+        let alert = UIAlertController(title: Constant.NOTICE, message: message,preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: Constant.OK, style: UIAlertActionStyle.default, handler: nil))
+        viewController.present(alert, animated: true, completion: nil)
+    }
 }

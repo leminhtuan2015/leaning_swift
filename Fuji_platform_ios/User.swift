@@ -13,15 +13,19 @@ import SwiftyJSON
 class User {
     private static let API_LOGIN_URL: String = "\(Constant.API_URL)user/login"
     private static let API_LOGOUT_URL: String = "\(Constant.API_URL)user/logout"
+    private static let API_REGISTER_URL: String = "\(Constant.API_URL)user/register"
     private static var currentUser: User? = nil
     
     private static let USER_NAME_JSON_KEY = "username"
+    private static let NEW_USER_NAME_JSON_KEY = "newUsername"
     private static let USER_PASSWORD_JSON_KEY = "password"
     private static let PRODUCT_CODE_JSON_KEY = "productCode"
+    private static let EMAIL_JSON_KEY = "email"
     private static let TOKEN_JSON_KEY = "token"
     private static let UID_JSON_KEY = "uid"
     
     private var username: String = ""
+    private var email: String = ""
     private var password: String = ""
     private var token: String = ""
     private var expires_in: String = ""
@@ -37,6 +41,12 @@ class User {
         self.username = username
         self.password = password
         self.token = token
+    }
+    
+    init(username: String, password: String, email: String) {
+        self.username = username
+        self.password = password
+        self.email = email
     }
     
     public func getUsername() -> String {
@@ -69,6 +79,14 @@ class User {
     
     public func setExpires_in(expires_in: String){
         self.expires_in = expires_in
+    }
+    
+    public func getEmail() -> String{
+        return self.email
+    }
+    
+    public func setEmail(email: String){
+        self.email = email
     }
     
     class func loadSession() {
@@ -136,7 +154,7 @@ class User {
         Alamofire.request(API_LOGOUT_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .validate().responseJSON { response in
                 
-                Logger.log(string: response.debugDescription)
+//                Logger.log(string: response.debugDescription)
                 
                 switch response.result {
                 case .success:
@@ -150,6 +168,35 @@ class User {
                     
                 case .failure(let error):
                     callback(false, "OK")
+                    
+                    Logger.log(string: error.localizedDescription)
+                }
+        }
+    }
+    
+    class func signup(user: User, callback: @escaping (_ isSuccess: Bool, _ message: String) -> Void) {
+        let parameters : Parameters = [NEW_USER_NAME_JSON_KEY: user.getUsername(),
+                                       EMAIL_JSON_KEY: user.getEmail(),
+                                       USER_PASSWORD_JSON_KEY: user.getPassword()
+                                    ]
+        
+        Alamofire.request(API_REGISTER_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { response in
+                
+                Logger.log(string: response.debugDescription)
+                
+                switch response.result {
+                case .success(let value):
+                    
+                    let json = JSON(value)
+                    
+                    Logger.log(string: json.description)
+                
+                    callback(true, Constant.SIGNUP_SUCCESS)
+                    
+                case .failure(let error):
+                    callback(false, Constant.USERNAME_OR_EMAIL_IS_EXISTS)
                     
                     Logger.log(string: error.localizedDescription)
                 }

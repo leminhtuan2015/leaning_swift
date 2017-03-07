@@ -16,7 +16,7 @@ class HomeViewController: BasicViewController {
     @IBAction func buttonLogin(_ sender: Any) {
         Logger.log(string: "Login")
         
-        self.performSegue(withIdentifier: Constant.SEGUE_LOGIN, sender: self)
+        self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_LOGIN, sender: self)
     }
     
     @IBAction func buttonLogout(_ sender: Any) {
