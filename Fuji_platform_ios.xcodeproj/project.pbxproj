@@ -25,6 +25,7 @@
 		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
 		A75027C41E6D5DF8005D686E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C31E6D5DF8005D686E /* Alert.swift */; };
 		A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C51E6D712E005D686E /* SignupViewController.swift */; };
+		A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */; };
 		CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		A75027C31E6D5DF8005D686E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A75027C51E6D712E005D686E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 				A75027A81E6CF2E9005D686E /* BasicViewController.swift */,
 				A75027AA1E6CF459005D686E /* LoginViewController.swift */,
 				A75027C51E6D712E005D686E /* SignupViewController.swift */,
+				A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
 				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,
+				A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
 			);

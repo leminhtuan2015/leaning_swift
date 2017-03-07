@@ -16,9 +16,11 @@ class Constant {
     public static let STORY_BOARD_LOGIN_ID: String = "LoginViewController"
     public static let STORY_BOARD_SIGNUP_ID: String = "SignupViewController"
     public static let STORY_BOARD_HOME_ID: String = "HomeViewController"
+    public static let STORY_BOARD_FORGOT_PASSWORD_ID: String = "ForgotPasswordViewController"
     
     public static let STORY_BOARD_SEGUE_LOGIN: String = "login"
     public static let STORY_BOARD_SEGUE_SIGNUP: String = "signup"
+    public static let STORY_BOARD_SEGUE_FORGOT_PASSWORD: String = "ForgotPassword"
     
     public static let LOGO_IMAGE_NAME: String = "logo"
     public static let LOGIN_TITLE: String = "Đăng nhập"
