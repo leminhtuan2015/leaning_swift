@@ -16,6 +16,12 @@ class LoginViewController: BasicViewController {
     @IBOutlet weak var textfieldUsername: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
     
+    @IBAction func buttonForgotPassword(_ sender: Any) {
+        Logger.log(string: "Forgot password")
+        
+        goToForgotPasswordViewController()
+    }
+    
     @IBAction func login(_ sender: Any) {
         Logger.log(string: "Clicked login")
         
@@ -88,6 +94,13 @@ class LoginViewController: BasicViewController {
         let homeViewController = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_HOME_ID) as! HomeViewController
         let navController = UINavigationController(rootViewController: homeViewController)
         self.present(navController, animated: true, completion: nil)
+    }
+    
+    private func goToForgotPasswordViewController(){
+        let storyboard = UIStoryboard(name: Constant.STORY_BOARD_MAIN_NAME, bundle: nil)
+        let forgotPasswordViewController = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_FORGOT_PASSWORD_ID) as! ForgotPasswordViewController
+        self.navigationController?.pushViewController(forgotPasswordViewController, animated: true)
+
     }
     
 }

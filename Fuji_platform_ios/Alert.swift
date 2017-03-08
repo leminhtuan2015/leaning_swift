@@ -24,9 +24,15 @@ class Alert {
         viewController.present(alertController, animated: true, completion: nil)
     }
     
-    class func show(viewController: UIViewController, message: String){
+    class func show(viewController: UIViewController, message: String, callback: @escaping () -> Void = {}){
         let alert = UIAlertController(title: Constant.NOTICE, message: message,preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: Constant.OK, style: UIAlertActionStyle.default, handler: nil))
+        
+        let okAction = UIAlertAction(title: Constant.OK, style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            callback()
+        }
+        
+        alert.addAction(okAction)
         viewController.present(alert, animated: true, completion: nil)
     }
 }

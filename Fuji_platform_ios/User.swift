@@ -14,6 +14,7 @@ class User {
     private static let API_LOGIN_URL: String = "\(Constant.API_URL)user/login"
     private static let API_LOGOUT_URL: String = "\(Constant.API_URL)user/logout"
     private static let API_REGISTER_URL: String = "\(Constant.API_URL)user/register"
+    private static let API_FORGOT_PASSWORD_URL: String = "\(Constant.API_URL)user/forgotPassword"
     private static var currentUser: User? = nil
     
     private static let USER_NAME_JSON_KEY = "username"
@@ -197,6 +198,28 @@ class User {
                     
                 case .failure(let error):
                     callback(false, Constant.USERNAME_OR_EMAIL_IS_EXISTS)
+                    
+                    Logger.log(string: error.localizedDescription)
+                }
+        }
+    }
+    
+    class func forgotPassword(email: String, callback: @escaping (_ isSuccess: Bool, _ message: String) -> Void){
+        
+        let parameters : Parameters = [EMAIL_JSON_KEY: email]
+
+        
+        Alamofire.request(API_FORGOT_PASSWORD_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { response in
+                
+                switch response.result {
+                case .success(let value):
+                    
+                    callback(true, Constant.FORGOT_PASWORD_SUCCESS)
+                    
+                case .failure(let error):
+                    callback(false, Constant.EMAIL_NOT_EXISTS)
                     
                     Logger.log(string: error.localizedDescription)
                 }
