@@ -226,6 +226,9 @@
                                 <rect key="frame" x="107" y="323" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LẤY MẬT KHẨU"/>
+                                <connections>
+                                    <action selector="buttonGetPassword:" destination="Enx-29-kb9" eventType="touchUpInside" id="AlV-ga-dCm"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hỗ trợ: 094 373 1327" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qJ9-nL-KgT">
                                 <rect key="frame" x="85" y="464" width="150" height="32"/>
@@ -237,6 +240,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonGetPassword" destination="n0X-FA-xh6" id="I3m-cX-mVj"/>
+                        <outlet property="imageViewLogo" destination="da7-Qn-kMv" id="ZJ4-y8-T5g"/>
+                        <outlet property="textfieldEmail" destination="n5P-G9-fi9" id="sN8-qI-UmU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50Q-za-TdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

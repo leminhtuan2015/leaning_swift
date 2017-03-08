@@ -44,6 +44,8 @@ class Constant {
     public static let IN_VALIDATE_EMAIL: String = "Email không đúng định dạng"
     public static let PASSWORD_NOT_MATCHES: String = "Mật khẩu và mật khẩu xác nhận không trùng nhau"
     public static let YOU_ARE_OFFLINE: String = "Bạn đang offile, vui lòng kết nối Internet"
+    public static let EMAIL_NOT_EXISTS: String = "Có lỗi xảy ra, email này không tồn tại trong hệ thống vui lòng nhập lại"
+    public static let FORGOT_PASWORD_SUCCESS: String = "Thành công, vui lòng truy cập email để lấy mật khẩu"
     
     public static let REGULAR_EXPRESSION_USERNAME = "^([0-9a-zA-Z]|\\.|_){8,20}$"
     
