@@ -41,6 +41,10 @@ class HomeViewController: BasicViewController {
         Alert.confirm(viewController: self, message: Constant.LOGOUT_CONFIRM, callback: callback)
     }
     
+    @IBAction func buttonUserInfo(_ sender: Any) {
+        self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_USER_INFO, sender: self)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,7 +63,7 @@ class HomeViewController: BasicViewController {
     }
     
     func setupView(){
-        if User.isLoggedId() {
+        if User.isLoggedIn() {
             buttonLogin.isEnabled = false
             buttonLogout.isEnabled = true
         } else {

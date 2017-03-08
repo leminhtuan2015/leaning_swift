@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70CCAD81E6F9E27004C0879 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70CCAD71E6F9E27004C0879 /* UserInfoViewController.swift */; };
+		A70CCADA1E6FB489004C0879 /* UpdateUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70CCAD91E6FB489004C0879 /* UpdateUserInfoViewController.swift */; };
+		A70CCADC1E6FD626004C0879 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70CCADB1E6FD626004C0879 /* UpdatePasswordViewController.swift */; };
 		A75027781E6CF29E005D686E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027771E6CF29E005D686E /* AppDelegate.swift */; };
 		A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027791E6CF29E005D686E /* HomeViewController.swift */; };
 		A750277D1E6CF29E005D686E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A750277B1E6CF29E005D686E /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 /* Begin PBXFileReference section */
 		6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuji_platform_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8312A14F4B62421AE4EC4EF4 /* Pods-Fuji_platform_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		A70CCAD71E6F9E27004C0879 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		A70CCAD91E6FB489004C0879 /* UpdateUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserInfoViewController.swift; sourceTree = "<group>"; };
+		A70CCADB1E6FD626004C0879 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		A75027741E6CF29E005D686E /* Fuji_platform_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuji_platform_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75027771E6CF29E005D686E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75027791E6CF29E005D686E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 				A75027AA1E6CF459005D686E /* LoginViewController.swift */,
 				A75027C51E6D712E005D686E /* SignupViewController.swift */,
 				A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */,
+				A70CCAD71E6F9E27004C0879 /* UserInfoViewController.swift */,
+				A70CCAD91E6FB489004C0879 /* UpdateUserInfoViewController.swift */,
+				A70CCADB1E6FD626004C0879 /* UpdatePasswordViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -420,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75027AE1E6CF525005D686E /* Logger.swift in Sources */,
+				A70CCAD81E6F9E27004C0879 /* UserInfoViewController.swift in Sources */,
 				A75027AB1E6CF459005D686E /* LoginViewController.swift in Sources */,
 				A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */,
 				A75027A91E6CF2E9005D686E /* BasicViewController.swift in Sources */,
@@ -428,10 +438,12 @@
 				A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */,
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
+				A70CCADC1E6FD626004C0879 /* UpdatePasswordViewController.swift in Sources */,
 				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,
 				A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
+				A70CCADA1E6FB489004C0879 /* UpdateUserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

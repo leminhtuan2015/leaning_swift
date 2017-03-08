@@ -100,7 +100,6 @@ class LoginViewController: BasicViewController {
         let storyboard = UIStoryboard(name: Constant.STORY_BOARD_MAIN_NAME, bundle: nil)
         let forgotPasswordViewController = storyboard.instantiateViewController(withIdentifier: Constant.STORY_BOARD_FORGOT_PASSWORD_ID) as! ForgotPasswordViewController
         self.navigationController?.pushViewController(forgotPasswordViewController, animated: true)
-
     }
     
 }
