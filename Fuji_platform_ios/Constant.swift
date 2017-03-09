@@ -24,6 +24,7 @@ class Constant {
     public static let STORY_BOARD_SEGUE_SIGNUP: String = "signup"
     public static let STORY_BOARD_SEGUE_FORGOT_PASSWORD: String = "ForgotPassword"
     public static let STORY_BOARD_SEGUE_USER_INFO: String = "UserInfo"
+    public static let STORY_BOARD_SEGUE_TRANFER_COIN: String = "TranferCoin"
     
     public static let LOGO_IMAGE_NAME: String = "logo"
     public static let LOGIN_TITLE: String = "Đăng nhập"
@@ -56,6 +57,10 @@ class Constant {
     public static let CURRENT_PASSWORD_WRONG: String = "Mật khẩu hiện tại không chính xác"
     public static let NEW_PASSWORD_AND_NEW_PASWORD_CONFIRM_NOT_MATCHES: String = "Mật khẩu mới và mật khẩu mới nhập lại không trùng nhau"
     public static let NEW_PASSWORD_AND_OLD_PASSOWRD_MATCHES: String = "Mật khẩu mới và mật khẩu cũ không được trùng nhau"
+    public static let CURRENT_COIN: String = "Hiện tại bạn có"
+    public static let BUYING_PACKAGE: String = "Bạn đang mua vật phẩm với giá"
+    public static let FCOIN: String = "FCOIN"
+    public static let NOT_EXIST: String = "Không tồn tại"
     
     public static let REGULAR_EXPRESSION_USERNAME = "^([0-9a-zA-Z]|\\.|_){8,20}$"
     

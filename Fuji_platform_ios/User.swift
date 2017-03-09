@@ -330,7 +330,7 @@ class User {
                 case .success(let value):
                     let json = JSON(value)
                     
-                    Logger.log(string: json.description)
+//                    Logger.log(string: json.description)
                     
                     let user: User? = User()
                     

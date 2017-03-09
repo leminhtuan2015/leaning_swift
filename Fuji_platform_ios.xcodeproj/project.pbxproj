@@ -28,6 +28,9 @@
 		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
 		A75027C41E6D5DF8005D686E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C31E6D5DF8005D686E /* Alert.swift */; };
 		A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C51E6D712E005D686E /* SignupViewController.swift */; };
+		A7D54C8E1E70EB790091DA30 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */; };
+		A7D54C9D1E710ECE0091DA30 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9C1E710ECE0091DA30 /* Payment.swift */; };
+		A7D54C9F1E7125220091DA30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9E1E7125220091DA30 /* Package.swift */; };
 		A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */; };
 		CC57650C521A98FBAD886663 /* Pods_Fuji_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAED7DE5219B6A28FBA0691 /* Pods_Fuji_platform_ios.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +82,9 @@
 		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		A75027C31E6D5DF8005D686E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A75027C51E6D712E005D686E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		A7D54C9C1E710ECE0091DA30 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		A7D54C9E1E7125220091DA30 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A7FE8FFA1E6EBF6700997A9F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuji_platform_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuji_platform_ios/Pods-Fuji_platform_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +157,7 @@
 		A75027761E6CF29E005D686E /* Fuji_platform_ios */ = {
 			isa = PBXGroup;
 			children = (
+				A7D54C951E70F0BA0091DA30 /* xibs */,
 				A75027B11E6CFF89005D686E /* resources */,
 				A75027AC1E6CF50B005D686E /* utils */,
 				A75027A71E6CF2CA005D686E /* views */,
@@ -194,6 +201,7 @@
 				A70CCAD71E6F9E27004C0879 /* UserInfoViewController.swift */,
 				A70CCAD91E6FB489004C0879 /* UpdateUserInfoViewController.swift */,
 				A70CCADB1E6FD626004C0879 /* UpdatePasswordViewController.swift */,
+				A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				A75027B51E6D02E1005D686E /* User.swift */,
+				A7D54C9C1E710ECE0091DA30 /* Payment.swift */,
+				A7D54C9E1E7125220091DA30 /* Package.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -240,6 +250,13 @@
 				A75027B91E6D0EA0005D686E /* logo.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		A7D54C951E70F0BA0091DA30 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,9 +449,11 @@
 				A70CCAD81E6F9E27004C0879 /* UserInfoViewController.swift in Sources */,
 				A75027AB1E6CF459005D686E /* LoginViewController.swift in Sources */,
 				A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */,
+				A7D54C9F1E7125220091DA30 /* Package.swift in Sources */,
 				A75027A91E6CF2E9005D686E /* BasicViewController.swift in Sources */,
 				A75027781E6CF29E005D686E /* AppDelegate.swift in Sources */,
 				A75027B01E6CF700005D686E /* Constant.swift in Sources */,
+				A7D54C8E1E70EB790091DA30 /* PaymentViewController.swift in Sources */,
 				A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */,
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
@@ -443,6 +462,7 @@
 				A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
+				A7D54C9D1E710ECE0091DA30 /* Payment.swift in Sources */,
 				A70CCADA1E6FB489004C0879 /* UpdateUserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
