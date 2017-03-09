@@ -14,9 +14,11 @@ class HomeViewController: BasicViewController {
     @IBOutlet weak var buttonLogout: UIButton!
 
     @IBAction func buttonLogin(_ sender: Any) {
-        Logger.log(string: "Login")
+        Logger.log(string: "Login 1")
         
         self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_LOGIN, sender: self)
+        
+        Logger.log(string: "Login 2")
     }
     
     @IBAction func buttonLogout(_ sender: Any) {
@@ -42,9 +44,19 @@ class HomeViewController: BasicViewController {
     }
     
     @IBAction func buttonUserInfo(_ sender: Any) {
+        Logger.log(string: "UserInfo 1")
         self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_USER_INFO, sender: self)
+        Logger.log(string: "UserInfo 2")
         
     }
+    
+    
+    @IBOutlet weak var buttonTranferCoin: UIButton!
+    
+    @IBAction func buttonTranferCoin(_ sender: Any) {
+        self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_TRANFER_COIN, sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,13 +65,18 @@ class HomeViewController: BasicViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        Logger.log(string: "Hello")
         setupView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        Logger.log(string: "SEGUE \(segue.identifier)")
+        
+        if segue.identifier == Constant.STORY_BOARD_SEGUE_TRANFER_COIN {
+            let vc = segue.destination as! PaymentViewController
+//            vc.setPackageCode(packageCode: "jp.co.alphapolis.games.remon.730")
+            vc.setPackageCode(packageCode: "jp.co.alphapolis.games.remon.5")
+        }
     }
     
     func setupView(){

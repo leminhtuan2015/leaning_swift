@@ -45,6 +45,14 @@
                                     <action selector="buttonUserInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8t-pW-8F4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtY-9n-3fM">
+                                <rect key="frame" x="119" y="245" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tranfer Coin"/>
+                                <connections>
+                                    <action selector="buttonTranferCoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLp-a0-Nl8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -52,8 +60,10 @@
                     <connections>
                         <outlet property="buttonLogin" destination="gc4-tT-zyX" id="Qe2-8Z-xJw"/>
                         <outlet property="buttonLogout" destination="xLw-36-H7R" id="reC-34-yfa"/>
+                        <outlet property="buttonTranferCoin" destination="QtY-9n-3fM" id="2N8-hA-YAg"/>
                         <segue destination="dCK-tT-pc7" kind="show" identifier="login" id="Win-Bq-mJt"/>
                         <segue destination="z4H-lP-wey" kind="show" identifier="UserInfo" id="G0W-Jt-wSP"/>
+                        <segue destination="exP-Zc-u6u" kind="show" identifier="TranferCoin" id="qZV-dG-js7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -207,6 +217,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OlE-z4-nqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2359" y="-897"/>
+        </scene>
+        <!--Payment-->
+        <scene sceneID="FXO-jg-kuh">
+            <objects>
+                <viewController title="Payment" id="exP-Zc-u6u" customClass="PaymentViewController" customModule="Fuji_platform_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zz6-Qb-c0L"/>
+                        <viewControllerLayoutGuide type="bottom" id="jca-Jh-bi9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DWX-SQ-wrz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nib-4u-y8Z">
+                                <rect key="frame" x="95" y="72" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CurrentCoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uak-Bj-QCf">
+                                <rect key="frame" x="16" y="232" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-Zq-bP5">
+                                <rect key="frame" x="102" y="380" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mua Bằng FCoin "/>
+                                <connections>
+                                    <action selector="buttonBuyByCoin:" destination="exP-Zc-u6u" eventType="touchUpInside" id="dfY-8e-dZ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhR-cV-aeK">
+                                <rect key="frame" x="72" y="431" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mua Bằng Thẻ Điện Thoại"/>
+                                <connections>
+                                    <action selector="buttonBuyByCard:" destination="exP-Zc-u6u" eventType="touchUpInside" id="YEk-Lh-BsF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-2q-h0a">
+                                <rect key="frame" x="16" y="261" width="288" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBuyByCard" destination="FhR-cV-aeK" id="I8A-vx-VLa"/>
+                        <outlet property="buttonBuyByFcoin" destination="ixR-Zq-bP5" id="VYp-0T-knC"/>
+                        <outlet property="imageViewLogo" destination="nib-4u-y8Z" id="ucc-7z-Bir"/>
+                        <outlet property="labelCurrentCoin" destination="uak-Bj-QCf" id="tt2-hl-CiN"/>
+                        <outlet property="labelMessage" destination="CaW-2q-h0a" id="9qB-rn-cTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWH-dC-dLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.5" y="505.98591549295776"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="vkT-8j-DEE">
@@ -371,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHs-af-Hzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491.25" y="456.33802816901408"/>
+            <point key="canvasLocation" x="1811" y="440"/>
         </scene>
         <!--UpdateUserInfo-->
         <scene sceneID="nEQ-gF-WUu">
@@ -445,12 +516,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR4-l6-ieU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668.75" y="455.28169014084506"/>
+            <point key="canvasLocation" x="2807" y="571"/>
         </scene>
         <!--Update Password-->
         <scene sceneID="hoc-R4-qvb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5KS-ho-deW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="UpdatePasswordViewController" title="Update Password" id="Af6-wv-8ho" customClass="UpdatePasswordViewController" customModule="Fuji_platform_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cKM-Ol-5Dj"/>
@@ -510,8 +580,9 @@
                         <outlet property="textViewNewPasswordConfirm" destination="U6K-y0-93h" id="kJg-Bh-sqX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KS-ho-deW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642.5" y="1184.1549295774648"/>
+            <point key="canvasLocation" x="1939" y="1162"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="6tr-YT-GgR">
