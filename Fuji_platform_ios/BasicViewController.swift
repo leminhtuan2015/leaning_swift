@@ -12,4 +12,8 @@ import UIKit
 
 class BasicViewController: UIViewController {
     
+    public func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
