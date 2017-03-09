@@ -32,6 +32,7 @@ class Constant {
     public static let USER_INFO_TITLE: String = "Thông tin tài khoản"
     public static let USER_UPDATE_INFO_TITLE: String = "Cập nhật thông tin"
     public static let USER_UPDATE_PASSWORD_TITLE: String = "Thay đổi mật khẩu"
+    public static let FORGOT_PASWORD_TITLE: String = "Quên mật khẩu"
     
     public static let NOTICE: String = "Thông báo"
     public static let ERROR: String = "Lỗi"
@@ -61,6 +62,7 @@ class Constant {
     public static let BUYING_PACKAGE: String = "Bạn đang mua vật phẩm với giá"
     public static let FCOIN: String = "FCOIN"
     public static let NOT_EXIST: String = "Không tồn tại"
+    public static let NOT_LOGGED_IN: String = "Bạn chưa đăng nhập, vui lòng đăng nhập tài khoản"
     
     public static let REGULAR_EXPRESSION_USERNAME = "^([0-9a-zA-Z]|\\.|_){8,20}$"
     

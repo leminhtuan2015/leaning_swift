@@ -31,6 +31,12 @@ class UserInfoViewController: BasicViewController {
     
     
     override func viewDidLoad() {
+        
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
         self.title = Constant.USER_INFO_TITLE
         
@@ -38,6 +44,12 @@ class UserInfoViewController: BasicViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         renderView()
     }
     

@@ -36,6 +36,12 @@ class PaymentViewController: BasicViewController {
     @IBOutlet weak var buttonBuyByCard: UIButton!
     
     override func viewDidLoad() {
+        
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
         
         prepareData()

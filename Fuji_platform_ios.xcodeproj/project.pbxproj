@@ -330,6 +330,7 @@
 				TargetAttributes = {
 					A75027731E6CF29E005D686E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CS5FP2778N;
 						ProvisioningStyle = Automatic;
 					};
 					A75027871E6CF29E005D686E = {
@@ -616,6 +617,7 @@
 			baseConfigurationReference = 8312A14F4B62421AE4EC4EF4 /* Pods-Fuji_platform_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CS5FP2778N;
 				INFOPLIST_FILE = Fuji_platform_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fuji.Fuji-platform-ios";
@@ -629,6 +631,7 @@
 			baseConfigurationReference = FD02AE7300FCFDD4128CFD8C /* Pods-Fuji_platform_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CS5FP2778N;
 				INFOPLIST_FILE = Fuji_platform_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fuji.Fuji-platform-ios";
