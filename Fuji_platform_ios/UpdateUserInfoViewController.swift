@@ -29,6 +29,11 @@ class UpdateUserInfoViewController: BasicViewController {
         self.title = Constant.USER_UPDATE_INFO_TITLE
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
         
+        fullname.delegate = self
+        phoneNumber.delegate = self
+        cmtDay.delegate = self
+        CMT.delegate = self
+        
         render()
     }
     

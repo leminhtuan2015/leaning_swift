@@ -43,7 +43,12 @@ class PaymentViewController: BasicViewController {
         }
         
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
+        self.title = Constant.PAYMENT_TITLE
         
+        prepareData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         prepareData()
     }
     
@@ -146,6 +151,12 @@ class PaymentViewController: BasicViewController {
     private func buyByCard() {
         Logger.log(string: "Buy by card")
         
+//        self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_PAYMENT_TELCO, sender: self)
+        
+        let storyboard = UIStoryboard(name: Constant.STORY_BOARD_MAIN_NAME, bundle: nil)
+        let controller = storyboard
+            .instantiateViewController(withIdentifier: Constant.STORY_BOARD_PAYMENT_TELCO_ID) as! PaymentTelcoViewController
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     public func setPackageCode(packageCode: String){

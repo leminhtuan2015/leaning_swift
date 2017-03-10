@@ -10,10 +10,16 @@ import Foundation
 import UIKit
 
 
-class BasicViewController: UIViewController {
+class BasicViewController: UIViewController, UITextFieldDelegate {
     
     public func goBack() {
         navigationController?.popViewController(animated: true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true;
+    }
+
 }

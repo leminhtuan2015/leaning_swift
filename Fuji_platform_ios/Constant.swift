@@ -19,12 +19,14 @@ class Constant {
     public static let STORY_BOARD_FORGOT_PASSWORD_ID: String = "ForgotPasswordViewController"
     public static let STORY_BOARD_UPDATE_USER_INFO_ID: String = "UpdateUserInfoViewController"
     public static let STORY_BOARD_UPDATE_PASSWORD_ID: String = "UpdatePasswordViewController"
+    public static let STORY_BOARD_PAYMENT_TELCO_ID: String = "PaymentTelcoViewController"
     
     public static let STORY_BOARD_SEGUE_LOGIN: String = "login"
     public static let STORY_BOARD_SEGUE_SIGNUP: String = "signup"
     public static let STORY_BOARD_SEGUE_FORGOT_PASSWORD: String = "ForgotPassword"
     public static let STORY_BOARD_SEGUE_USER_INFO: String = "UserInfo"
     public static let STORY_BOARD_SEGUE_TRANFER_COIN: String = "TranferCoin"
+    public static let STORY_BOARD_SEGUE_PAYMENT_TELCO: String = "PaymentTelcoViewController"
     
     public static let LOGO_IMAGE_NAME: String = "logo"
     public static let LOGIN_TITLE: String = "Đăng nhập"
@@ -33,6 +35,8 @@ class Constant {
     public static let USER_UPDATE_INFO_TITLE: String = "Cập nhật thông tin"
     public static let USER_UPDATE_PASSWORD_TITLE: String = "Thay đổi mật khẩu"
     public static let FORGOT_PASWORD_TITLE: String = "Quên mật khẩu"
+    public static let PAYMENT_TELCO_TITLE: String = "Thanh toán qua thẻ"
+    public static let PAYMENT_TITLE: String = "Thanh toán"
     
     public static let NOTICE: String = "Thông báo"
     public static let ERROR: String = "Lỗi"
@@ -63,6 +67,7 @@ class Constant {
     public static let FCOIN: String = "FCOIN"
     public static let NOT_EXIST: String = "Không tồn tại"
     public static let NOT_LOGGED_IN: String = "Bạn chưa đăng nhập, vui lòng đăng nhập tài khoản"
+    public static let CHOOSE_TELCO_TYPE: String = "Vui lòng chọn nhà mạng"
     
     public static let REGULAR_EXPRESSION_USERNAME = "^([0-9a-zA-Z]|\\.|_){8,20}$"
     

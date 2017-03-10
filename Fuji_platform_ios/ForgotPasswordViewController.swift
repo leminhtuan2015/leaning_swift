@@ -26,6 +26,8 @@ class ForgotPasswordViewController: BasicViewController {
     override func viewDidLoad() {
         self.title = Constant.FORGOT_PASWORD_TITLE
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
+        
+        textfieldEmail.delegate = self
     }
     
     private func getPassword(){

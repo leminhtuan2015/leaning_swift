@@ -42,12 +42,15 @@ class LoginViewController: BasicViewController {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
         
         self.title = Constant.LOGIN_TITLE
-        
+        self.textfieldUsername.delegate = self
+        self.textfieldPassword.delegate = self
     }
-    
+
     private func login(){
         let username = textfieldUsername.text?.trimmingCharacters(in: CharacterSet.whitespaces)
         let password = textfieldPassword.text?.trimmingCharacters(in: CharacterSet.whitespaces)
