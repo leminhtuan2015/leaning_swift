@@ -21,5 +21,10 @@ class BasicViewController: UIViewController, UITextFieldDelegate {
         
         return true;
     }
+    
+    func setBackButtonText(text: String){
+        let backButton = UIBarButtonItem(title: text, style:.plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButton
+    }
 
 }

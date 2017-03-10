@@ -45,6 +45,8 @@ class PaymentViewController: BasicViewController {
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
         self.title = Constant.PAYMENT_TITLE
         
+        setBackButtonText(text: "Back")
+        
         prepareData()
     }
     
