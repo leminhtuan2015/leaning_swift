@@ -28,6 +28,21 @@
 		A75027C01E6D3CA8005D686E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027BF1E6D3CA8005D686E /* Toast.swift */; };
 		A75027C41E6D5DF8005D686E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C31E6D5DF8005D686E /* Alert.swift */; };
 		A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75027C51E6D712E005D686E /* SignupViewController.swift */; };
+		A75F64B81E72526F001502B4 /* PaymentTelcoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F64B71E72526F001502B4 /* PaymentTelcoViewController.swift */; };
+		A75F64C51E7259FF001502B4 /* ic_appota_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64B91E7259FF001502B4 /* ic_appota_disabled.png */; };
+		A75F64C61E7259FF001502B4 /* ic_appota.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BA1E7259FF001502B4 /* ic_appota.png */; };
+		A75F64C71E7259FF001502B4 /* ic_mega_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BB1E7259FF001502B4 /* ic_mega_disabled.png */; };
+		A75F64C81E7259FF001502B4 /* ic_mega.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BC1E7259FF001502B4 /* ic_mega.png */; };
+		A75F64C91E7259FF001502B4 /* ic_mobiphone_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BD1E7259FF001502B4 /* ic_mobiphone_disabled.png */; };
+		A75F64CA1E7259FF001502B4 /* ic_mobiphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BE1E7259FF001502B4 /* ic_mobiphone.png */; };
+		A75F64CB1E7259FF001502B4 /* ic_vcoin_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64BF1E7259FF001502B4 /* ic_vcoin_disabled.png */; };
+		A75F64CC1E7259FF001502B4 /* ic_vcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C01E7259FF001502B4 /* ic_vcoin.png */; };
+		A75F64CD1E7259FF001502B4 /* ic_viettel_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C11E7259FF001502B4 /* ic_viettel_disabled.png */; };
+		A75F64CE1E7259FF001502B4 /* ic_viettel.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C21E7259FF001502B4 /* ic_viettel.png */; };
+		A75F64CF1E7259FF001502B4 /* ic_vinaphone_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C31E7259FF001502B4 /* ic_vinaphone_disabled.png */; };
+		A75F64D01E7259FF001502B4 /* ic_vinaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C41E7259FF001502B4 /* ic_vinaphone.png */; };
+		A75F64D41E725D0D001502B4 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64D31E725D0D001502B4 /* apple.png */; };
+		A75F64D61E725FA7001502B4 /* PaymentTelco.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F64D51E725FA7001502B4 /* PaymentTelco.swift */; };
 		A7D54C8E1E70EB790091DA30 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */; };
 		A7D54C9D1E710ECE0091DA30 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9C1E710ECE0091DA30 /* Payment.swift */; };
 		A7D54C9F1E7125220091DA30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9E1E7125220091DA30 /* Package.swift */; };
@@ -82,6 +97,21 @@
 		A75027BF1E6D3CA8005D686E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		A75027C31E6D5DF8005D686E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A75027C51E6D712E005D686E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A75F64B71E72526F001502B4 /* PaymentTelcoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTelcoViewController.swift; sourceTree = "<group>"; };
+		A75F64B91E7259FF001502B4 /* ic_appota_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_appota_disabled.png; sourceTree = "<group>"; };
+		A75F64BA1E7259FF001502B4 /* ic_appota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_appota.png; sourceTree = "<group>"; };
+		A75F64BB1E7259FF001502B4 /* ic_mega_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_mega_disabled.png; sourceTree = "<group>"; };
+		A75F64BC1E7259FF001502B4 /* ic_mega.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_mega.png; sourceTree = "<group>"; };
+		A75F64BD1E7259FF001502B4 /* ic_mobiphone_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_mobiphone_disabled.png; sourceTree = "<group>"; };
+		A75F64BE1E7259FF001502B4 /* ic_mobiphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_mobiphone.png; sourceTree = "<group>"; };
+		A75F64BF1E7259FF001502B4 /* ic_vcoin_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vcoin_disabled.png; sourceTree = "<group>"; };
+		A75F64C01E7259FF001502B4 /* ic_vcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vcoin.png; sourceTree = "<group>"; };
+		A75F64C11E7259FF001502B4 /* ic_viettel_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_viettel_disabled.png; sourceTree = "<group>"; };
+		A75F64C21E7259FF001502B4 /* ic_viettel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_viettel.png; sourceTree = "<group>"; };
+		A75F64C31E7259FF001502B4 /* ic_vinaphone_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vinaphone_disabled.png; sourceTree = "<group>"; };
+		A75F64C41E7259FF001502B4 /* ic_vinaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vinaphone.png; sourceTree = "<group>"; };
+		A75F64D31E725D0D001502B4 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		A75F64D51E725FA7001502B4 /* PaymentTelco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTelco.swift; sourceTree = "<group>"; };
 		A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		A7D54C9C1E710ECE0091DA30 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		A7D54C9E1E7125220091DA30 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -202,6 +232,7 @@
 				A70CCAD91E6FB489004C0879 /* UpdateUserInfoViewController.swift */,
 				A70CCADB1E6FD626004C0879 /* UpdatePasswordViewController.swift */,
 				A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */,
+				A75F64B71E72526F001502B4 /* PaymentTelcoViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -211,6 +242,7 @@
 			children = (
 				A75027B51E6D02E1005D686E /* User.swift */,
 				A7D54C9C1E710ECE0091DA30 /* Payment.swift */,
+				A75F64D51E725FA7001502B4 /* PaymentTelco.swift */,
 				A7D54C9E1E7125220091DA30 /* Package.swift */,
 			);
 			name = models;
@@ -247,6 +279,19 @@
 		A75027B21E6CFF94005D686E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A75F64D31E725D0D001502B4 /* apple.png */,
+				A75F64B91E7259FF001502B4 /* ic_appota_disabled.png */,
+				A75F64BA1E7259FF001502B4 /* ic_appota.png */,
+				A75F64BB1E7259FF001502B4 /* ic_mega_disabled.png */,
+				A75F64BC1E7259FF001502B4 /* ic_mega.png */,
+				A75F64BD1E7259FF001502B4 /* ic_mobiphone_disabled.png */,
+				A75F64BE1E7259FF001502B4 /* ic_mobiphone.png */,
+				A75F64BF1E7259FF001502B4 /* ic_vcoin_disabled.png */,
+				A75F64C01E7259FF001502B4 /* ic_vcoin.png */,
+				A75F64C11E7259FF001502B4 /* ic_viettel_disabled.png */,
+				A75F64C21E7259FF001502B4 /* ic_viettel.png */,
+				A75F64C31E7259FF001502B4 /* ic_vinaphone_disabled.png */,
+				A75F64C41E7259FF001502B4 /* ic_vinaphone.png */,
 				A75027B91E6D0EA0005D686E /* logo.png */,
 			);
 			name = images;
@@ -370,10 +415,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75F64C71E7259FF001502B4 /* ic_mega_disabled.png in Resources */,
+				A75F64C91E7259FF001502B4 /* ic_mobiphone_disabled.png in Resources */,
+				A75F64C61E7259FF001502B4 /* ic_appota.png in Resources */,
+				A75F64C51E7259FF001502B4 /* ic_appota_disabled.png in Resources */,
+				A75F64C81E7259FF001502B4 /* ic_mega.png in Resources */,
+				A75F64CC1E7259FF001502B4 /* ic_vcoin.png in Resources */,
+				A75F64D41E725D0D001502B4 /* apple.png in Resources */,
+				A75F64D01E7259FF001502B4 /* ic_vinaphone.png in Resources */,
+				A75F64CA1E7259FF001502B4 /* ic_mobiphone.png in Resources */,
+				A75F64CE1E7259FF001502B4 /* ic_viettel.png in Resources */,
+				A75F64CF1E7259FF001502B4 /* ic_vinaphone_disabled.png in Resources */,
 				A75027BA1E6D0EA0005D686E /* logo.png in Resources */,
 				A75027821E6CF29E005D686E /* LaunchScreen.storyboard in Resources */,
+				A75F64CD1E7259FF001502B4 /* ic_viettel_disabled.png in Resources */,
 				A750277F1E6CF29E005D686E /* Assets.xcassets in Resources */,
 				A750277D1E6CF29E005D686E /* Main.storyboard in Resources */,
+				A75F64CB1E7259FF001502B4 /* ic_vcoin_disabled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,10 +514,12 @@
 				A75027B01E6CF700005D686E /* Constant.swift in Sources */,
 				A7D54C8E1E70EB790091DA30 /* PaymentViewController.swift in Sources */,
 				A75027C61E6D712E005D686E /* SignupViewController.swift in Sources */,
+				A75F64B81E72526F001502B4 /* PaymentTelcoViewController.swift in Sources */,
 				A75027B61E6D02E1005D686E /* User.swift in Sources */,
 				A75027C01E6D3CA8005D686E /* Toast.swift in Sources */,
 				A70CCADC1E6FD626004C0879 /* UpdatePasswordViewController.swift in Sources */,
 				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,
+				A75F64D61E725FA7001502B4 /* PaymentTelco.swift in Sources */,
 				A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,

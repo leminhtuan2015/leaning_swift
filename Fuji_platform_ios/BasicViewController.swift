@@ -10,10 +10,21 @@ import Foundation
 import UIKit
 
 
-class BasicViewController: UIViewController {
+class BasicViewController: UIViewController, UITextFieldDelegate {
     
     public func goBack() {
         navigationController?.popViewController(animated: true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true;
+    }
+    
+    func setBackButtonText(text: String){
+        let backButton = UIBarButtonItem(title: text, style:.plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButton
+    }
+
 }

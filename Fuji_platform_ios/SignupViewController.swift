@@ -54,6 +54,11 @@ class SignupViewController: BasicViewController {
     
     override func viewDidLoad() {
         self.title = Constant.SIGNUP_TITLE
+        
+        textfieldUsername.delegate = self
+        textfieldPassword.delegate = self
+        textfieldEmail.delegate = self
+        textfieldPasswordConfirm.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {

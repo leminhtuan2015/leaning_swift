@@ -154,10 +154,6 @@ class Payment {
                 }
         }
     }
-    
-    class public func pay(){
-        
-    }
 }
 
 
