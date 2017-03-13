@@ -49,4 +49,45 @@ class Utils {
         
         return ret
     }
+    
+    class func humanDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        
+        let humanDate = dateFormatter.string(from: date)
+        
+        return humanDate
+    }
+    
+    class func humanDate(dateString1: String) -> String {
+        Logger.log(string: dateString1)
+        
+        if !dateString1.isEmpty {
+            //        let dateString = "Wed Jan 14 00:08:00 2015"
+            
+            let dateString = dateString1.replacingOccurrences(of: "ICT", with: "")
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "E MMM dd HH:mm:ss yyyy"
+            let dateFromString: Date? = formatter.date(from: dateString)
+            
+            formatter.dateFormat = "yyyy/MM/dd"
+            let stringFromDate: String = formatter.string(from: dateFromString!)
+            
+            return stringFromDate
+        }
+        
+        return ""
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -35,7 +35,7 @@ class BasicViewController: UIViewController, UITextFieldDelegate {
         self.animateTextField(textField: textField, up:false)
     }
     
-    private func animateTextField(textField: UITextField, up: Bool) {
+    internal func animateTextField(textField: UITextField, up: Bool) {
         let movementDistance:CGFloat = -130
         let movementDuration: Double = 0.3
         

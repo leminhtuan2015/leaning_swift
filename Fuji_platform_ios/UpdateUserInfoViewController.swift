@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import DatePickerDialog
 
 class UpdateUserInfoViewController: BasicViewController {
     
@@ -35,6 +36,28 @@ class UpdateUserInfoViewController: BasicViewController {
         CMT.delegate = self
         
         render()
+    }
+    
+    override func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.animateTextField(textField: textField, up:true)
+        
+        if textField == cmtDay {
+            
+            CMT.endEditing(true)
+            phoneNumber.endEditing(true)
+            fullname.endEditing(true)
+            
+                    DatePickerDialog().show(title: "yyyy/mm/dd", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) { (date) -> Void in
+                        if date != nil && date?.description != "nil"{
+                            Logger.log(string: (date?.description)!)
+            
+                            let humanDate = Utils.humanDate(date: date!)
+            
+                            textField.text = "\(humanDate)"
+                        }
+                        
+                    }
+        }
     }
     
     private func render(){
