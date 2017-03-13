@@ -56,6 +56,8 @@ class UserInfoViewController: BasicViewController {
     private func renderView(){
         
         func callback(isSuccess: Bool, message: String, user: User?) {
+            Indicator.stop()
+            
             if isSuccess {
                 username.text = user?.getUsername()
                 email.text = user?.getEmail()
@@ -77,6 +79,7 @@ class UserInfoViewController: BasicViewController {
             }
         }
         
+        Indicator.start(context: self.view)
         User.getUserInfo(token: User.getCurrentUser().getToken(), callback: callback)
         
     }
