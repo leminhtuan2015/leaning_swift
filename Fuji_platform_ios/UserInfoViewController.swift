@@ -72,18 +72,21 @@ class UserInfoViewController: BasicViewController {
             Indicator.stop()
             
             if isSuccess {
+                
+                let cmtDateFormated = Utils.humanDate(dateString1: (user?.getCMTDate())!)
+                
                 username.text = user?.getUsername()
                 email.text = user?.getEmail()
                 fullname.text = user?.getFullname()
                 cmt.text = user?.getCMT()
-                cmtDay.text = user?.getCMTDate()
+                cmtDay.text = cmtDateFormated
                 phone.text = user?.getPhoneNumber()
                 dob.text = user?.getDOB()
                 fcoin.text = user?.getFcoin()
                 
                 User.getCurrentUser().setFullname(fullname: (user?.getFullname())!)
                 User.getCurrentUser().setCMT(cmt: (user?.getCMT())!)
-                User.getCurrentUser().setCMTDate(cmtDate: (user?.getCMTDate())!)
+                User.getCurrentUser().setCMTDate(cmtDate: cmtDateFormated)
                 User.getCurrentUser().setPhoneNumber(phoneNumber: (user?.getPhoneNumber())!)
                 User.getCurrentUser().setDOB(dob: (user?.getDOB())!)
                 User.getCurrentUser().setFcoin(fcoin: (user?.getFcoin())!)

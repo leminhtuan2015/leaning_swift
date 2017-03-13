@@ -12,6 +12,9 @@ class Constant {
     public static let API_URL: String = "http://sabina.vn:9000/"
     public static let PRODUCT_CODE: String = "RMReMonster"
     
+    public static let DATE_TIME_FORMAT: String = "yyyy-MM-dd HH:mm:ss Z"
+    public static let DATE_TIME_HUMAN_FORMAT: String = "yyyy-MM-dd"
+    
     public static let STORY_BOARD_MAIN_NAME: String = "Main"
     public static let STORY_BOARD_LOGIN_ID: String = "LoginViewController"
     public static let STORY_BOARD_SIGNUP_ID: String = "SignupViewController"

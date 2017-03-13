@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.4.0)
   - CryptoSwift (0.6.7)
+  - DatePickerDialog (1.1.7)
   - NVActivityIndicatorView (3.5.1)
   - STRegex (0.4.3)
   - SwiftyJSON (3.1.4)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - CryptoSwift
+  - DatePickerDialog
   - NVActivityIndicatorView
   - STRegex (~> 0.4.0)
   - SwiftyJSON
@@ -17,11 +19,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
   NVActivityIndicatorView: 075563b3547445ebcff840e3297ce9dd4a23731f
   STRegex: c7decbba8601717274774a3f341c4807a327a6d0
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
-PODFILE CHECKSUM: f5cc8bd882c79da9f8750780288d0cc0a7ed8d52
+PODFILE CHECKSUM: 52cd0943b912ef865b385793a9780b32dda43a8d
 
 COCOAPODS: 1.2.0

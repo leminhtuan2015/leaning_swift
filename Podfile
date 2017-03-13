@@ -8,4 +8,5 @@ target 'Fuji_platform_ios' do
   pod 'Toast-Swift', '~> 2.0.0'
   pod 'CryptoSwift'
   pod 'STRegex', '~> 0.4.0'
+  pod 'DatePickerDialog'
 end
