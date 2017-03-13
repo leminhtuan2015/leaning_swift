@@ -18,8 +18,10 @@ class Constant {
     public static let STORY_BOARD_HOME_ID: String = "HomeViewController"
     public static let STORY_BOARD_FORGOT_PASSWORD_ID: String = "ForgotPasswordViewController"
     public static let STORY_BOARD_UPDATE_USER_INFO_ID: String = "UpdateUserInfoViewController"
+    public static let STORY_BOARD_USER_INFO_ID: String = "UserInfoViewController"
     public static let STORY_BOARD_UPDATE_PASSWORD_ID: String = "UpdatePasswordViewController"
     public static let STORY_BOARD_PAYMENT_TELCO_ID: String = "PaymentTelcoViewController"
+    public static let STORY_BOARD_PAYMENT_ID: String = "PaymentViewController"
     
     public static let STORY_BOARD_SEGUE_LOGIN: String = "login"
     public static let STORY_BOARD_SEGUE_SIGNUP: String = "signup"
@@ -67,6 +69,7 @@ class Constant {
     public static let FCOIN: String = "FCOIN"
     public static let NOT_EXIST: String = "Không tồn tại"
     public static let NOT_LOGGED_IN: String = "Bạn chưa đăng nhập, vui lòng đăng nhập tài khoản"
+    public static let LOGGED_IN: String = "Bạn đã đăng nhập"
     public static let CHOOSE_TELCO_TYPE: String = "Vui lòng chọn nhà mạng"
     
     public static let REGULAR_EXPRESSION_USERNAME = "^([0-9a-zA-Z]|\\.|_){8,20}$"

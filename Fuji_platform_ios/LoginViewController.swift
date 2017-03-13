@@ -70,7 +70,8 @@ class LoginViewController: BasicViewController {
                 if isSuccess {
                     Toast.show(context: self.view, text: Constant.LOGIN_SUCCESS)
                     
-                    goToHomeViewController()
+//                    goToHomeViewController()
+                    goBack()
                     
                 } else {
                     Toast.show(context: self.view, text: Constant.LOGIN_FAIL)

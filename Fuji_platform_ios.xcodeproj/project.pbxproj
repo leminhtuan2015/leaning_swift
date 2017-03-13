@@ -43,6 +43,8 @@
 		A75F64D01E7259FF001502B4 /* ic_vinaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64C41E7259FF001502B4 /* ic_vinaphone.png */; };
 		A75F64D41E725D0D001502B4 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = A75F64D31E725D0D001502B4 /* apple.png */; };
 		A75F64D61E725FA7001502B4 /* PaymentTelco.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F64D51E725FA7001502B4 /* PaymentTelco.swift */; };
+		A79D7DC11E76505C0028CF41 /* FujiSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D7DC01E76505C0028CF41 /* FujiSDK.swift */; };
+		A79D7DC31E76554D0028CF41 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D7DC21E76554D0028CF41 /* TestViewController.swift */; };
 		A7D54C8E1E70EB790091DA30 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */; };
 		A7D54C9D1E710ECE0091DA30 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9C1E710ECE0091DA30 /* Payment.swift */; };
 		A7D54C9F1E7125220091DA30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D54C9E1E7125220091DA30 /* Package.swift */; };
@@ -112,6 +114,8 @@
 		A75F64C41E7259FF001502B4 /* ic_vinaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vinaphone.png; sourceTree = "<group>"; };
 		A75F64D31E725D0D001502B4 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		A75F64D51E725FA7001502B4 /* PaymentTelco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTelco.swift; sourceTree = "<group>"; };
+		A79D7DC01E76505C0028CF41 /* FujiSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FujiSDK.swift; sourceTree = "<group>"; };
+		A79D7DC21E76554D0028CF41 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A7D54C8D1E70EB790091DA30 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		A7D54C9C1E710ECE0091DA30 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		A7D54C9E1E7125220091DA30 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				A75027A61E6CF2C1005D686E /* models */,
 				A75027A51E6CF2B6005D686E /* controllers */,
 				A75027771E6CF29E005D686E /* AppDelegate.swift */,
+				A79D7DC01E76505C0028CF41 /* FujiSDK.swift */,
+				A79D7DC21E76554D0028CF41 /* TestViewController.swift */,
 				A750277B1E6CF29E005D686E /* Main.storyboard */,
 				A750277E1E6CF29E005D686E /* Assets.xcassets */,
 				A75027801E6CF29E005D686E /* LaunchScreen.storyboard */,
@@ -506,6 +512,7 @@
 			files = (
 				A75027AE1E6CF525005D686E /* Logger.swift in Sources */,
 				A70CCAD81E6F9E27004C0879 /* UserInfoViewController.swift in Sources */,
+				A79D7DC31E76554D0028CF41 /* TestViewController.swift in Sources */,
 				A75027AB1E6CF459005D686E /* LoginViewController.swift in Sources */,
 				A750277A1E6CF29E005D686E /* HomeViewController.swift in Sources */,
 				A7D54C9F1E7125220091DA30 /* Package.swift in Sources */,
@@ -520,6 +527,7 @@
 				A70CCADC1E6FD626004C0879 /* UpdatePasswordViewController.swift in Sources */,
 				A75027C41E6D5DF8005D686E /* Alert.swift in Sources */,
 				A75F64D61E725FA7001502B4 /* PaymentTelco.swift in Sources */,
+				A79D7DC11E76505C0028CF41 /* FujiSDK.swift in Sources */,
 				A7FE8FFB1E6EBF6700997A9F /* ForgotPasswordViewController.swift in Sources */,
 				A75027BE1E6D3561005D686E /* Indicator.swift in Sources */,
 				A75027BC1E6D1B35005D686E /* Utils.swift in Sources */,
