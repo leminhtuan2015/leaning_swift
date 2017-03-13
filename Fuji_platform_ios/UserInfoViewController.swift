@@ -32,6 +32,8 @@ class UserInfoViewController: BasicViewController {
     
     override func viewDidLoad() {
         
+        renderDefaulfView()
+        
         if(!User.isLoggedIn()){
             Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
             return
@@ -51,6 +53,17 @@ class UserInfoViewController: BasicViewController {
         }
         
         renderView()
+    }
+    
+    private func renderDefaulfView(){
+        username.text = ""
+        email.text = ""
+        fullname.text = ""
+        cmt.text = ""
+        cmtDay.text = ""
+        phone.text = ""
+        dob.text = ""
+        fcoin.text = ""
     }
     
     private func renderView(){

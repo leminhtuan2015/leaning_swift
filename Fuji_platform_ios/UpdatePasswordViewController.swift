@@ -28,6 +28,10 @@ class UpdatePasswordViewController: BasicViewController {
         self.title = Constant.USER_UPDATE_PASSWORD_TITLE
         
         imageViewLogo.image = UIImage(named: Constant.LOGO_IMAGE_NAME)
+        
+        textViewNewPassword.delegate = self
+        textViewNewPasswordConfirm.delegate = self
+        textViewCurrentPassword.delegate = self
     }
     
     private func changePassword(){

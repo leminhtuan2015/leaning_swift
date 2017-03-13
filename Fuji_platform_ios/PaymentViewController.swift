@@ -37,6 +37,8 @@ class PaymentViewController: BasicViewController {
     
     override func viewDidLoad() {
         
+        renderDefaulfView()
+        
         if(!User.isLoggedIn()){
             Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
             return
@@ -57,6 +59,11 @@ class PaymentViewController: BasicViewController {
         }
         
         prepareData()
+    }
+    
+    private func renderDefaulfView(){
+        labelMessage.text = ""
+        labelCurrentCoin.text = ""
     }
     
     private func prepareData(){
