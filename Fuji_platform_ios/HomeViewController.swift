@@ -40,10 +40,17 @@ class HomeViewController: BasicViewController {
             }
             
         }
+        
         Alert.confirm(viewController: self, message: Constant.LOGOUT_CONFIRM, callback: callback)
     }
     
     @IBAction func buttonUserInfo(_ sender: Any) {
+        
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         Logger.log(string: "UserInfo 1")
         self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_USER_INFO, sender: self)
         Logger.log(string: "UserInfo 2")
@@ -54,6 +61,12 @@ class HomeViewController: BasicViewController {
     @IBOutlet weak var buttonTranferCoin: UIButton!
     
     @IBAction func buttonTranferCoin(_ sender: Any) {
+        
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         self.performSegue(withIdentifier: Constant.STORY_BOARD_SEGUE_TRANFER_COIN, sender: self)
     }
     

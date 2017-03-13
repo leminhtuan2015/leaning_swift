@@ -51,6 +51,11 @@ class PaymentViewController: BasicViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if(!User.isLoggedIn()){
+            Toast.show(context: self.view, text: Constant.NOT_LOGGED_IN)
+            return
+        }
+        
         prepareData()
     }
     

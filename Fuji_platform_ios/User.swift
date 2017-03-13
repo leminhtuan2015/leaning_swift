@@ -240,6 +240,14 @@ class User {
     }
     
     class func logout(callback: @escaping (_ isSuccess: Bool, _ message: String) -> Void){
+        
+        // BEGIN - Need refactor (leminhtuan)
+        UserDefaults.standard.removeObject(forKey: USER_NAME_JSON_KEY)
+        UserDefaults.standard.removeObject(forKey: USER_PASSWORD_JSON_KEY)
+        UserDefaults.standard.removeObject(forKey: TOKEN_JSON_KEY)
+        User.currentUser = nil
+        // END
+        
         let parameters : Parameters = [TOKEN_JSON_KEY: currentUser!.getToken(),
                                        UID_JSON_KEY: currentUser!.getUsername()]
         
@@ -259,7 +267,10 @@ class User {
                     callback(true, "OK")
                     
                 case .failure(let error):
-                    callback(false, "OK")
+//                    callback(false, "OK")
+                    
+                    // Ned to refactor
+                    callback(true, "OK")
                     
                     Logger.log(string: error.localizedDescription)
                 }
