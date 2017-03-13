@@ -241,15 +241,16 @@ class User {
     
     class func logout(callback: @escaping (_ isSuccess: Bool, _ message: String) -> Void){
         
+        let parameters : Parameters = [TOKEN_JSON_KEY: currentUser!.getToken(),
+                                       UID_JSON_KEY: currentUser!.getUsername()]
+        
         // BEGIN - Need refactor (leminhtuan)
         UserDefaults.standard.removeObject(forKey: USER_NAME_JSON_KEY)
         UserDefaults.standard.removeObject(forKey: USER_PASSWORD_JSON_KEY)
         UserDefaults.standard.removeObject(forKey: TOKEN_JSON_KEY)
         User.currentUser = nil
+        callback(true, "OK")
         // END
-        
-        let parameters : Parameters = [TOKEN_JSON_KEY: currentUser!.getToken(),
-                                       UID_JSON_KEY: currentUser!.getUsername()]
         
         Alamofire.request(API_LOGOUT_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .validate().responseJSON { response in
@@ -264,13 +265,10 @@ class User {
                     UserDefaults.standard.removeObject(forKey: TOKEN_JSON_KEY)
                     User.currentUser = nil
                     
-                    callback(true, "OK")
+//                    callback(true, "OK")
                     
                 case .failure(let error):
 //                    callback(false, "OK")
-                    
-                    // Ned to refactor
-                    callback(true, "OK")
                     
                     Logger.log(string: error.localizedDescription)
                 }
