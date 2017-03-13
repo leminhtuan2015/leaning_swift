@@ -56,6 +56,8 @@ class PaymentViewController: BasicViewController {
     
     private func prepareData(){
         func callbackGetPackage(isSuccess: Bool, message: String, packages: [Package]){
+            Indicator.stop()
+            
             if isSuccess {
 //                Logger.log(string: packages.description)
                 
@@ -79,6 +81,8 @@ class PaymentViewController: BasicViewController {
                 Toast.show(context: self.view, text: message)
             }
         }
+        
+        Indicator.start(context: self.view)
         
         Payment.getServerCode(productCode: Payment.PRODUCT_CODE, callback: callbackGetServerCodes)
         Package.getPackages(productCode: Payment.PRODUCT_CODE, callback: callbackGetPackage)
